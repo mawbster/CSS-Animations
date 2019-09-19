@@ -478,13 +478,25 @@ nav a:hover {
 
 /* =================================================== TEXT PAGE =====================================================*/
 
+/*================ MAIN STYLING =============*/
+
 .textbody {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   color: #ffffff;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.textbody h2{
+  margin-top: 15px;
+  margin-bottom:15px;
+  font-size: 18px;
+  
 }
 
 .textcontainer {
@@ -492,24 +504,30 @@ nav a:hover {
   justify-content: space-evenly;
   color: #ffffff;
   background-color;
-  margin: 20px;
   flex-wrap: wrap;
+  border-top: 0.5px solid #545454;
 }
 
 .textbox {
   display: flex;
   flex-direction: column;
   min-width: 300px;
-  min-height: 250px;
+  min-height: 200px;
   justify-content: center;
   text-align: center;
 }
 
 .textcontainer span {
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom:5px
 }
+
+/* ========== ASSET STYLING ==============*/
+
+/* ========= ROW 1 =========== */
+
 .textcontainer h3 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 #slideright {
@@ -626,3 +644,522 @@ nav a:hover {
     transform: translatex(0px);
   }
 }
+
+
+/* ========== ROW 2 ===========*/
+
+#shine {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+/* =========== ROW 3 ===============*/
+
+.hand {
+  position: relative;
+  margin-left: auto;
+  margin-right:auto;
+  opacity: ;
+  stroke-dasharray: 2600;
+  stroke-dashoffset: 2600;
+}
+
+
+#h1{
+  stroke-width: 12;
+  animation: letter-animation 15s linear forwards;
+  animation-delay: 4.8s;
+}
+
+@keyframes letter-animation {
+  0% {
+      stroke-dashoffset: 2600;
+  }
+  100% {
+      stroke-dashoffset: 0;
+  }
+}
+
+
+
+
+/* ======================================================= BUTTON PAGE =================================================*/
+
+
+.buttonbody{
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.buttonbody p {
+  font-size: 20px;
+  padding: 50px;
+}
+
+.buttonrow{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+/* ====================================== SNAKE BUTTONS ======================================*/
+
+
+/* ======================== BUTTON STYLING =======================*/
+
+.snakesbutton {
+  margin-bottom: 70px;
+}
+.snakesbutton a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  transform: translate(-50%);
+  padding: 30px 60px;
+  font-size: 15px;
+  text-transform: uppercase;
+  overflow: hidden;
+  width: 30px 60px;
+}
+
+.snakesbutton a:hover{
+  color: #ff00cd;
+}
+
+/* ============== SNAKES BUTTON 1 ANIMATION ====================== */
+.snakesbutton a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #000000, #ffffff);
+  animation: snakes1 2s linear infinite;
+
+}
+@keyframes snakes1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.snakesbutton a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #000000, #ffffff);
+  animation: snakes2 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes snakes2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.snakesbutton a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #000000, #ffffff);
+  animation: snakes3 2s linear infinite;
+}
+@keyframes snakes3 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.snakesbutton a span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, #000000, #ffffff);
+  animation: snakes4 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes snakes4 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+/* =============== SNAKES BUTTON 2 STYLING ====================*/
+.snakesbutton2 a {
+  text-decoration: none;
+  color: #f0ff00;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  transform: translate(-50%);
+  padding: 30px 60px;
+  font-size: 15px;
+  text-transform: uppercase;
+  overflow: hidden;
+  width: 30px 60px;
+}
+
+.snakesbutton2 a:hover{
+  color: #ff00cd;
+}
+
+/* ============== SNAKES BUTTON 2 ANIMATION ================== */
+.snakesbutton2 a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #000000, #f0ff00);
+  animation: snakes21 2s linear infinite;
+
+}
+@keyframes snakes21 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.snakesbutton2 a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, #000000, #f0ff00);
+  animation: snakes22 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes snakes22 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.snakesbutton2 a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #000000, #f0ff00);
+  animation: snakes23 2s linear infinite;
+}
+@keyframes snakes23 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.snakesbutton2 a span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #000000, #f0ff00);
+  animation: snakes24 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes snakes24 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* ================= BOUNCY BUTTONS =====================*/
+
+a.bouncy {
+  display: flex;
+  padding: 25px 60px;
+  border: 2px solid #FFFFFF;
+  margin: 0 10px 10px 0;
+  height: 80px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'poppins',sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+ .bouncy:hover {
+  animation: bouncy 0.75s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  }
+
+  @keyframes bouncy {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-20px);}
+  }
+
+  /* ============= MOVING BORDER BUTTONS ==============*/
+
+ /* ====== BUTTON 1 FILL ON HOVER =======*/
+  .btn1 {
+    position: relative;
+    background: #000000;
+    color: aqua;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid aqua;
+    padding: 15px 30px;
+ }
+
+ .btn1:hover{
+   background-color: aqua;
+   color: #000000;
+ }
+
+ /* ====== BUTTON 2 OPACITY CHANGE =====*/
+
+ .btn2 {
+  position: relative;
+  background: aqua;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 3px solid aqua;
+  padding: 15px 30px;
+  opacity: 0.5;
+  transition: 0.3s
+}
+.btn2:hover {
+  opacity: 1;
+}
+
+/* ====== BUTTON 3 SLIDE FROM TOP =======*/
+.btn3 {
+  position: relative;
+  background: aqua;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 3px solid aqua;
+  padding: 15px 30px;
+  transition: 0.3s
+}
+.btn3:hover {
+  color: aqua;
+}
+
+.btn3:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: black;
+  transition: all .35s;
+}
+
+.btn3 span{
+  position: relative;
+  z-index: +2;
+}
+
+.btn3:hover:after{
+  height: 100%;
+}
+
+/* === EXPANDING BUTTON ===*/
+
+.btn4 {
+  position: relative;
+  background: black;
+  color: aqua;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 3px solid aqua;
+  padding: 15px 30px;
+  
+}
+
+.btn4 a{
+  z-index: 2;
+}
+.btn4:hover {  
+  transition: 1s ease-in-out;
+  background: aqua;
+  color: #000000;
+}
+
+
+
+
+
+/*
+
+HTML CSSResult
+EDIT ON
+.wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+a span{
+  position: relative;
+  z-index: 2;
+}
+
+a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  transition: all .35s;
+}
+
+a:hover{
+  color: #fff;
+}
+
+a:hover:after{
+  width: 100%;
+}
+
+
+
+
+/*
+
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; 
